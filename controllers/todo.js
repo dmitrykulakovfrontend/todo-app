@@ -3,7 +3,6 @@ const Todo = require("../model/todo");
 exports.getTodos = async (req, res) => {
   try {
     const todos = await Todo.find({});
-    console.log(todos);
     res.send({
       status: "success",
       message: "Data fetched correctly",
