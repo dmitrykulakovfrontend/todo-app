@@ -41,7 +41,6 @@ exports.updateTodo = async (req, res) => {
         title: body.title,
         isComplete: body.isComplete,
         description: body.description,
-        createdAt: body.createdAt,
       }
     );
 

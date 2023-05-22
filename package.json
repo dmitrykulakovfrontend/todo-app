@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./app.js",
-    "dev": "concurrently \"node --watch ./app.js\" \"cd client && npm run dev\" "
+    "dev": "concurrently \"npx nodemon ./app.js\" \"cd client && npm run dev\" "
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

@@ -7,10 +7,12 @@ todo = {
 }
 */
 const mongoose = require("mongoose");
-const todo = new mongoose.Schema({
-  title: String,
-  isComplete: Boolean,
-  description: String,
-  createdAt: String,
-});
+const todo = new mongoose.Schema(
+  {
+    title: String,
+    isComplete: Boolean,
+    description: String,
+  },
+  { timestamps: true }
+);
 module.exports = mongoose.model("todo", todo);
